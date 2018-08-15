@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ColorPick from './ColorPick'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hue: '',
-      saturation: '',
-      lightness : ''
-    }
-  }
-
   render() {
     return (
       <div className="App">
@@ -19,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Color Picker Project</h1>
         </header>
         <section>
-
+          <ColorPick />
         </section>
       </div>
     );
