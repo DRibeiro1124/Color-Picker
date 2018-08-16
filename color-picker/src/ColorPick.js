@@ -25,15 +25,22 @@ class ColorPick extends Component {
         this.setState({Lightness: newLightness})
     }
 
+    colorUpdated = (event) => {
+        const newColor = event.target.value;
+        console.log('Color is being updated')
+    }
+
     render() {
         return (
-            <div>
-                <section>
-                    <input type= "range" min= "0" max= "0"></input>
-                    <input type= "range" min= "0" max= "0"></input>
-                    <input type= "range" min= "0" max= "0"></input>
+            <div className="main-container">
+                <header>
+                    <h2>My color picker!</h2>
+                </header>
+                <section className="sliders">
+                    <input type= "range" min= "0" max= "360" onInput={this.colorUpdated} onChange={this.hueUpdate} value={this.state.Hue}/>
+                    <input type= "range" min= "0" max= "100" onInput={this.colorUpdated} onChange={this.saturationUpdate} value={this.state.Saturation}/>
+                    <input type= "range" min= "0" max= "100" onInput={this.colorUpdated} onChange={this.lightnessUpdate} value={this.state.Lightness}/>
                 </section>
-
             </div>
         );
     }
