@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import ColorPick from './ColorPick'
 
@@ -10,9 +10,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Color Picker Project</h1>
         </header>
-        <section>
+        <div>
           <ColorPick />
-        </section>
+        </div>
       </div>
     );
   }
