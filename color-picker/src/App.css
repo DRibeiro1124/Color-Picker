@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -8,8 +9,8 @@
 }
 
 .App-header {
-  border: 1px solid red;
-  height: 200px;
+  /* border: 1px solid red; */
+  height: 100px;
   padding: 30px;
 }
 
@@ -29,12 +30,22 @@
 .main-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .sliders {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6em;
 }
 
+.pixel-box {
+  display: flex;
+  justify-content: center;
+}
+
+.colorBox {
+  border: 4px solid black;
+}
